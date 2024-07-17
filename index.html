@@ -26,7 +26,7 @@
 
 <link href="https://ldtax.gov.bd/assets/global/css/components-rounded.css" id="style_components" rel="stylesheet" type="text/css"/>
 
-<!-- remove checkbox add.ctp -->
+
 <!-- <link href="https://ldtax.gov.bd/assets/global/css/plugins-md.css" rel="stylesheet" type="text/css"/> -->
 <link href="https://ldtax.gov.bd/assets/admin/layout4/css/layout.css" rel="stylesheet" type="text/css"/>
 <link href="https://ldtax.gov.bd/assets/admin/layout4/css/themes/light.css" rel="stylesheet" type="text/css" id="style_color"/>
@@ -94,7 +94,19 @@
         }
     </style>
 
-
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<!-- DOC: Apply "page-header-fixed-mobile" and "page-footer-fixed-mobile" class to body element to force fixed header or footer in mobile devices -->
+<!-- DOC: Apply "page-sidebar-closed" class to the body and "page-sidebar-menu-closed" class to the sidebar menu element to hide the sidebar by default -->
+<!-- DOC: Apply "page-sidebar-hide" class to the body to make the sidebar completely hidden on toggle -->
+<!-- DOC: Apply "page-sidebar-closed-hide-logo" class to the body element to make the logo hidden on sidebar toggle -->
+<!-- DOC: Apply "page-sidebar-hide" class to body element to completely hide the sidebar on sidebar toggle -->
+<!-- DOC: Apply "page-sidebar-fixed" class to have fixed sidebar -->
+<!-- DOC: Apply "page-footer-fixed" class to the body element to have fixed footer -->
+<!-- DOC: Apply "page-sidebar-reversed" class to put the sidebar on the right side -->
+<!-- DOC: Apply "page-full-width" class to the body element to have full width page without the sidebar menu -->
+<body class="page-md page-sidebar-page-sidebar-closed-hide-logo page-header-fixed page-footer-fixed">
   <div class="loaderDiv">
     <div class="loader" style="align-content: center; width:300px; height: 300px; top: 0;"></div>
     <div style="color:green; font-weight: bold; font-size:24px; text-align: center; position: fixed; width:100%; top: 18%;" class="loadMsg">লোড হচ্ছে। <br>অনুগ্রহ করে <span style="color: red;">অপেক্ষা</span> করুন।</div>
@@ -121,12 +133,14 @@
             <div class="top-menu">
                 <ul class="nav navbar-nav pull-right">
 
-                    
+                    <li class="separator hide">
+                    </li>
                     <li><br>
 
                     </li>
 
-                    
+                    <li class="separator hide">
+                    </li>
 
                                         <img src="https://ldtax.gov.bd/assets/admin/layout4/img/nagorik.png" />
                          
@@ -179,7 +193,7 @@
                     <div class="col-md-12">
                         <div style="text-align: center !important; display: block !important;">
                             <input style="margin-top: 10px; padding: 10px;" id="print" class="btn btn-md blue" type="button" onclick="printDiv('printArea')" value="প্রিন্ট" />
-                            <!-- <a class="btn btn-md btn-success" href="https://ldtax.gov.bd/ldtax-holdings/individual-rashid-print-offline-preview/OXhVTXZIWFFRMlRxY2d2a2pXT3JXUT09" target="_blank" style="margin-top: 10px;padding:10px;">PDF</a> -->
+                            <!-- <a class="btn btn-md btn-success" href="https://ldtax.gov.bd/ldtax-holdings/individual-rashid-print-offline-preview/ZjNzU09ZR1J4MGQ2cGZNUTNHaXltUT09" target="_blank" style="margin-top: 10px;padding:10px;">PDF</a> -->
                         </div>
                     </div>
                 
@@ -207,7 +221,7 @@
                                 .qrcode-print{
                                    width:100%;
                                    display: list-item;
-                                   list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAABSAQMAAAD94hHYAAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABIklEQVQokZXSPaoEMQgAYCGt4FUCaQNeXUgreJVAWsHnzBabZKtnk29gMuMfwD+DQmSNNcNPI5i4xRS87ArcFU1vD2Rx+bVZo+Y/BlVvWD/f/5pC3/jk83W+NZnq/GT9dR48C6vP01gqdyIberqYhbjKvAyKXEvro59GibVixJvnbsY6upUfr9VIm9hlqG2VFlbqaQxDJK+ilwWoj5mNOQ2u2XG11i8vxGruT+27iy7iRa54GnpdZErPv3aXNkgCCPpplLZGKf5c3Z2HsBFLv5y3uyu9fd6MK4cKWcvl0rgHRW7BaZqzYwiHnM4nCMjy8TRFzrTkZvpphKEtsnS97KJ9sTne1uFkwvV2DmJK4X4ZjOsq8Yxid+6wVI53l3b/M/4AsT1wLGx2hNUAAAAASUVORK5CYII=);
+                                   list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAABSAQMAAAD94hHYAAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABHElEQVQokZXRQQrEIAyF4UC2D3KVgNuAVxfcCrmK4FbI2A7DVGc1rr5SGn5Toj+PROVAQszdIM/hPAsOz9oRpt5Oexpay69LG13xY2olOff3/K8l2n3ePV9fqeZtfrI/lhmu5CPpbhas77WlflhrDPa7+WlRGxY2s+4GDWNlfjc/LPBqCdR3c3hLXuOq21y4rZW0gcMxPPUo0XYL2DQC2ncTgqki2dwNxVBfgTice2ON6vNwrOvEuGc+zbXAVkm23bJu3jOsYzeNsWr9nvm0iAmmkuru1WCVabgdZpqIohOHcwkpa2TZfT3R2jlot4SHoOGa+TSozJmpAYfnets9ovzYKffqON3MvQ6yw7R+naxC7F4NtpZV2tz953kBsMtZ6OkoRpoAAAAASUVORK5CYII=);
                                    list-style-position: inside;
                                    background-repeat: no-repeat;
                                 }
@@ -239,7 +253,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="text-left">(সংশোধিত)</td>
-                                                    <td class="text-right input_bangla">ক্রমিক নং 855824030214</td>
+                                                    <td class="text-right input_bangla">ক্রমিক নং 855824029633</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center" colspan="2">
@@ -254,14 +268,14 @@
                                             <table style="width:100%;">
                                                 <tr>
                                                     <td style="width: 320px;">সিটি কর্পোরেশন /পৌর /ইউনিয়ন ভূমি অফিসের নাম  :</td>
-                                                    <td class="dotted_botton">ছড়ানহাট ইউনিয়ন ভূমি অফিস</td>
+                                                    <td class="dotted_botton">জায়গীরহাট ইউনিয়ন ভূমি অফিস</td>
                                                 </tr>
                                             </table>
                                             <table style="margin-top:5px; width:100%;">
                                                 <tr>
                                                     <td style="width: 170px;">                                                        মৌজার নাম ও জে. এল. নং:
                                                     </td>
-                                                    <td class="dotted_botton input_bangla" style="padding: 0 10px 0 5px;">তরফ গঙ্গারামপুর - 47</td>
+                                                    <td class="dotted_botton input_bangla" style="padding: 0 10px 0 5px;">হেতমপুর - 133</td>
                                                     <td style="width: 105px">উপজেলা / থানা  :</td>
                                                     <td class="dotted_botton" style="padding: 0 10px 0 5px;">মিঠাপুকুর</td>
                                                     <td style="width: 40px">জেলা:</td>
@@ -274,7 +288,7 @@
                                                     <td style="width: 225px"><!-- ২ নং রেজিস্টার অনুযায়ী হোল্ডিং নম্বার -->
                                                     ২ নং রেজিস্টার অনুযায়ী হোল্ডিং নম্বর:</td>
                                                     <td class="dotted_botton numeric_bangla" style="padding-left: 10px;">
-                                                        296                                                    </td>
+                                                        91                                                    </td>
                                                 </tr>
                                             </table>
 
@@ -282,7 +296,7 @@
                                                 <tr>
                                                     <td style="width: 75px">খতিয়ান নং:</td>
                                                     <td class="dotted_botton numeric_bangla" style="padding-left: 10px;">
-                                                        299                                                    </td>
+                                                        92                                                    </td>
                                                 </tr>
                                             </table>
                                             <div style="height: 10px"></div>
@@ -302,7 +316,7 @@
                                             <tbody style="height: 21px;">
                                                                                         <tr>
                                                     <td class="b1 input_bangla">1</td>
-                                                    <td class="b1 input_bangla">মোছাঃ রাবেয়া খাতুন</td>
+                                                    <td class="b1 input_bangla">এস এম ফখর উজ জামান</td>
                                                     <td class="b1 input_bangla text-right">1</td>
                                                 </tr>
                                                                                     </tbody>
@@ -321,10 +335,10 @@
                                             <tbody style="height: 21px;">
                                                                                         <tr>
                                                     <td class="b1 input_bangla">1</td>
-                                                    <td class="b1 input_bangla">200</td>
+                                                    <td class="b1 input_bangla">12</td>
                                                     <td class="b1">
-                                                        দলা(                                                        কৃষি২)                                                    </td>
-                                                    <td class="b1 input_bangla">12.50000</td>
+                                                        কৃষি(                                                        কৃষি)                                                    </td>
+                                                    <td class="b1 input_bangla">9.00000</td>
                                                 </tr>
                                                                                     </tbody>
                                         </table>
@@ -340,10 +354,10 @@
                                             <tbody style="height: 21px;">
                                                                                         <tr>
                                                     <td class="b1 input_bangla">2</td>
-                                                    <td class="b1 input_bangla">293</td>
+                                                    <td class="b1 input_bangla">13</td>
                                                     <td class="b1">
-                                                        ডাঙ্গা(                                                        কৃষি২)                                                    </td>
-                                                    <td class="b1 input_bangla">22.00000</td>
+                                                        কৃষি(                                                        কৃষি)                                                    </td>
+                                                    <td class="b1 input_bangla">66.00000</td>
                                                 </tr>
                                                                                     </tbody>
                                         </table>
@@ -352,7 +366,7 @@
                                         <table style="border: 1px dotted; border-collapse: collapse; margin:10px 2px ; width: 100%; font-size: 12px;">
                                             <tr>
                                                 <td class="b1 text-center" style="width: 50%;">সর্বমোট জমি (শতাংশ)</td>
-                                                <td class="b1 input_bangla" style="width: 50%;">34.5</td>
+                                                <td class="b1 input_bangla" style="width: 50%;">75</td>
                                             </tr>
                                         </table>
                                         <div style="height: 10px;"></div>
@@ -376,11 +390,11 @@
                                                 <td align="center">০</td>
                                                 <td align="center">০</td>
                                                 <td align="center">০</td>
-                                                <td align="center">৭০</td>
+                                                <td align="center">০</td>
                                                 <td align="center">
-                                                    ৭০</td>
+                                                    ০</td>
 
-                                                <td align="center">৭০</td>
+                                                <td align="center">৪৫০</td>
                                                 <td align="center">
                                                     ০                                                </td>
                                                 <td align="center"></td>
@@ -388,16 +402,17 @@
                                         </table>
                                         <div style="width:100% !important; margin:10px 2px ;">
                                             <p class="dotted_botton"> সর্বমোট (কথায়):
-                                                                                                সত্তর টাকা মাত্র ।
+                                                                                                চার শত পঞ্চাশ টাকা মাত্র ।
                                             </p>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div style="width: 360px; float: left;" align="left">
-                                                    <p style="margin: 0 !important;"><p style="margin: 0 !important;">নোট: সর্বশেষ কর পরিশোধের সাল - ১৪৩০</p></p>
-                                                    <p class="input_bangla"> চালান নং : 2324-0030089711</p>
+                                                    <p style="margin: 0 !important;"><p style="margin: 0 !important;">নোট: সর্বশেষ কর পরিশোধের সাল - 
+            ১৪৩১ থেকে ১৪৩৩</p></p>
+                                                    <p class="input_bangla"> চালান নং : 2324-0028868270</p>
                                                     <p>
-                                                        তারিখ : <div style="margin-top: -37px;margin-left: 10px;"><p style="width: 115px;padding: 0;margin: 0;margin-left: 38px;margin-bottom: 2px;">৯ ফাল্গুন ১৪৩০</p><span style="border-top:1px solid; margin-left:36px;">২২ ফেব্রুয়ারী, ২০২৪</span></p></div>
+                                                        তারিখ : <div style="margin-top: -37px;margin-left: 10px;"><p style="width: 115px;padding: 0;margin: 0;margin-left: 38px;margin-bottom: 2px;">৩০ মাঘ ১৪৩০</p><span style="border-top:1px solid; margin-left:36px;">১৩ ফেব্রুয়ারী, ২০২৪</span></p></div>
                                                     </p>
                                                 </div>
                                                 <div style="width: 90px; float: left;" align="center">
